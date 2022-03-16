@@ -15,7 +15,7 @@ export function Header() {
   const history = useLocation();
   const navigate = useNavigate();
   const { t }: { t: any } = useTranslation();
-  const token = useSelector((state: RootState) => state.user.token);
+  const isUserLogged = useSelector((state: RootState) => state.user.isLogged);
 
   return (
     <S.Container>
@@ -61,7 +61,7 @@ export function Header() {
               </S.MenuOption>
             </S.ListItem>
             <S.ListItem>
-              {token !== null ? (
+              {isUserLogged ? (
                 <UserPopover />
               ) : (
                 <Button

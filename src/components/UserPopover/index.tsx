@@ -4,7 +4,7 @@ import { OverlayTrigger, Popover } from "react-bootstrap";
 import { useDispatch } from "react-redux";
 import { useNavigate } from "react-router-dom";
 import { logout } from "../../store/User.store";
-import DefaultUserImage from "./default-user-image.png";
+import DefaultUserImage from "../../assets/default-user-image.png";
 import * as S from "./styles";
 import { useTranslation } from "react-i18next";
 

@@ -12,6 +12,14 @@ export const Container = styled.main.attrs({
   @media (max-width: 715px) {
     margin-top: 2rem;
   }
+
+  button {
+    padding: 12px 24px;
+    border-radius: 25px;
+    margin-top: 2rem;
+    font-size: 1.2rem;
+    box-shadow: 1px 5px 15px 5px rgba(0, 0, 0, 0.05);
+  }
 `;
 
 export const Content = styled.div.attrs({

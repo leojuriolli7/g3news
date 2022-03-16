@@ -9,14 +9,16 @@ import { LoginAnimation } from "../LoginAnimation";
 
 export function LoginField() {
   const { t }: { t: any } = useTranslation();
-  const token = useSelector((state: RootState) => state.user.token);
+  const isUserLogged = useSelector((state: RootState) => state.user.isLogged);
+  const user = useSelector((state: RootState) => state.user);
+  console.log("~ user", user);
   const navigate = useNavigate();
 
   return (
     <S.Container>
       <S.Content>
         <LoginAnimation />
-        {token !== null ? (
+        {isUserLogged ? (
           <>
             <S.AlreadyLoggedInMessage>
               {t("alreadyLoggedInMessage")}

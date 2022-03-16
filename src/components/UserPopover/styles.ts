@@ -38,10 +38,9 @@ export const MenuLink = styled.a`
 
 export const ProfileContainer = styled.img`
   cursor: pointer;
-  border: white 1px solid;
   border-radius: 50%;
-  width: 50px;
-  height: 50px;
+  width: 55px;
+  height: 55px;
   box-shadow: 1px 5px 15px 5px rgba(0, 0, 0, 0.1);
   background: var(--background);
   object-fit: cover;

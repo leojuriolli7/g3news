@@ -3,23 +3,25 @@ import { createSlice } from "@reduxjs/toolkit";
 const initialState = {
   id: null,
   email: null,
-  profileImage: undefined,
   firstName: null,
   lastName: null,
   token: null,
+  profileImage: null,
+  isLogged: false,
 };
 
 const userSlice = createSlice({
   name: "user",
   initialState,
   reducers: {
-    setUser(state, payload) {
-      state.id = payload.payload.id;
-      state.email = payload.payload.email;
-      state.profileImage = payload.payload.profileImage;
-      state.firstName = payload.payload.firstName;
-      state.lastName = payload.payload.lastName;
-      state.token = payload.payload.token;
+    setUser(state, { payload }: any) {
+      state.id = payload.user.id;
+      state.email = payload.user.email;
+      state.firstName = payload.user.firstName;
+      state.lastName = payload.user.lastName;
+      state.token = payload.accessToken;
+      state.profileImage = payload.user.profileImage;
+      state.isLogged = true;
     },
     logout: () => initialState,
     // logout(state) {

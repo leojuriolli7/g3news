@@ -18,7 +18,7 @@ export function HamburguerMenu() {
   const { t }: { t: any } = useTranslation();
   const navigate = useNavigate();
   const history = useLocation();
-  const token = useSelector((state: RootState) => state.user.token);
+  const isUserLogged = useSelector((state: RootState) => state.user.isLogged);
 
   return (
     <>
@@ -63,7 +63,7 @@ export function HamburguerMenu() {
                   </S.MenuOption>
                 </S.ListItem>
                 <S.ListItem>
-                  {token !== null ? (
+                  {isUserLogged ? (
                     <S.UserPopoverContainer>
                       <UserPopover />
                     </S.UserPopoverContainer>

@@ -1,11 +1,35 @@
 {
   "users": [
     {
-      "id": 34,
+      "email": "leojuriolli@gmail.com",
+      "password": "$2a$10$2RRRmXuhttWA.ulRgAZ7huSEGPUU6Cvwz4XOexGRFoTRpAY3rr08C",
+      "firstName": "Leonardo",
+      "lastName": "Dias",
+      "profileImage": "https://i.imgur.com/YL3A8fy.jpg",
+      "id": 1
+    },
+    {
+      "email": "leojuriolli2@gmail.com",
+      "password": "$2a$10$v8rFIomLRFDazEgjcTkoGeRDi07.adj8ZzgfwsBnemQsMRe6jlsz.",
       "firstName": "Leonardo",
       "lastName": "Juriolli",
-      "email": "leojuriolli@gmail.com",
-      "profileImage": null
+      "profileImage": "https://i.imgur.com/KMHfIiW.jpg",
+      "id": 2
+    },
+    {
+      "email": "suelijuriolli@gmail.com",
+      "password": "$2a$10$JsV8E/.8xmfoYUrma3pvpeVuyOfcf7Sof7FlXa.n7RQnTEc3x.qSm",
+      "firstName": "Sueli",
+      "lastName": "Juriolli",
+      "id": 3
+    },
+    {
+      "email": "luisjuriolli@gmail.com",
+      "password": "$2a$10$xmi8qIguvtJIwvUrSCYeLu6Bk.ZZ.9CFLT5U.01RWzKGU1lVBIubi",
+      "firstName": "Luis",
+      "lastName": "Juriolli",
+      "profileImage": "https://i.imgur.com/tpeBCZc.jpg",
+      "id": 4
     }
   ]
 }

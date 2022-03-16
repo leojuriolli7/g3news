@@ -2,8 +2,9 @@ import * as S from "./styles";
 
 interface ButtonProps {
   text: string;
-  onClick: () => void;
+  onClick?: () => void;
   type: "button" | "submit" | "reset";
+  disabled?: boolean;
 }
 
 export function Button({ text, onClick, type }: ButtonProps) {

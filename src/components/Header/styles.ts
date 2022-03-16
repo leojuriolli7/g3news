@@ -72,9 +72,6 @@ export const UnorganizedList = styled.ul`
 export const ListItem = styled.li`
   list-style: none;
   cursor: pointer;
-
-  .userpopover {
-  }
 `;
 
 interface MenuOptionInterface {

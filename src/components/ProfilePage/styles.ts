@@ -60,11 +60,10 @@ export const ErrorLink = styled.a`
 
 export const ProfileImage = styled.img`
   margin-top: 5rem;
-  width: 8rem;
-  height: 8rem;
+  width: 9rem;
+  height: 9rem;
   box-shadow: 1px 5px 15px 5px rgba(0, 0, 0, 0.1);
   border-radius: 50%;
-  border: 5px solid var(--text-title);
   object-fit: cover;
 `;
 

@@ -4,6 +4,6 @@ export const api = axios.create({
   baseURL: "https://mmobomb.com/api1/",
 });
 
-export const jsonServer = axios.create({
-  baseURL: "https://localhost:3000/",
+export const apiJson = axios.create({
+  baseURL: "http://localhost:4000/",
 });

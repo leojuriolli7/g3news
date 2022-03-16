@@ -5,38 +5,32 @@ import { useDispatch } from "react-redux";
 import { useTranslation } from "react-i18next";
 import { InputValidationMessage } from "../../components/InputValidationMessage";
 import { setUser } from "../../store/User.store";
-import ProfileImage from "./mock-profile-image.jpg";
 import { useNavigate } from "react-router-dom";
 import { Spinner } from "react-bootstrap";
+import { apiJson } from "../../services/api";
+import { Button } from "../../components/Button";
+import { useState } from "react";
+import { PasswordEye } from "../../components/PasswordEye";
 
 export const LoginForm = () => {
   const navigate = useNavigate();
   const { t }: { t: any } = useTranslation();
   const dispatch = useDispatch();
+  const [passwordVisible, setPasswordVisible] = useState(false);
 
   const LoginSchema = Yup.object().shape({
     email: Yup.string().email("Invalid email").required(t("required")),
     password: Yup.string().required(t("required")),
   });
 
-  const userLoginInformationMockedFromBackEnd = {
-    id: 34,
-    firstName: "Leonardo",
-    lastName: "Juriolli",
-    email: "leojuriolli@gmail.com",
-    profileImage: ProfileImage,
-    token:
-      "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxMjM0NTY3ODkwIiwibmFtZSI6IkpvaG4gRG9lIiwiaWF0IjoxNTE2MjM5MDIyfQ.SflKxwRJSMeKKF2QT4fwpMeJf36POk6yJV_adQssw5c",
-  };
-
   const handleSubmit = (values: FormikValues, actions: any) => {
     actions.setSubmitting(true);
-    setTimeout(() => {
-      // Mocked auth response from back-end
-      dispatch(setUser(userLoginInformationMockedFromBackEnd));
-      navigate("/");
-      actions.setSubmitting(false);
-    }, 2000);
+    apiJson
+      .post("/login", values)
+      .then((response) => dispatch(setUser(response.data)));
+
+    navigate("/");
+    actions.setSubmitting(false);
   };
 
   return (
@@ -69,20 +63,28 @@ export const LoginForm = () => {
               id="password"
               name="password"
               placeholder={t("passwordInputPlaceholderLogin")}
-              type="password"
+              type={passwordVisible === true ? "text" : "password"}
+            />
+            <PasswordEye
+              passwordVisible={passwordVisible}
+              setPasswordVisible={setPasswordVisible}
             />
             {touched.password && errors.password && (
               <InputValidationMessage text={errors.password} />
             )}
           </S.FieldContainer>
 
-          <S.Button type="submit" disabled={isSubmitting}>
-            {isSubmitting ? (
-              <Spinner animation="border" size="sm" />
-            ) : (
-              t("submit")
-            )}
-          </S.Button>
+          <Button
+            type="submit"
+            disabled={isSubmitting}
+            text={
+              isSubmitting ? (
+                <Spinner animation="border" size="sm" />
+              ) : (
+                t("submit")
+              )
+            }
+          />
         </Form>
       )}
     </Formik>
