@@ -7,10 +7,12 @@ import { InputValidationMessage } from "../../components/InputValidationMessage"
 import { setUser } from "../../store/User.store";
 import { useNavigate } from "react-router-dom";
 import { Spinner } from "react-bootstrap";
-import { apiJson } from "../../services/api";
 import { Button } from "../../components/Button";
 import { useState } from "react";
 import { PasswordEye } from "../../components/PasswordEye";
+import { useMutation } from "react-query";
+import { userLogin } from "../../utils/requests";
+import toast from "react-hot-toast";
 
 export const LoginForm = () => {
   const navigate = useNavigate();
@@ -23,13 +25,19 @@ export const LoginForm = () => {
     password: Yup.string().required(t("required")),
   });
 
+  const { mutate } = useMutation(userLogin, {
+    onSuccess: (data) => {
+      dispatch(setUser(data));
+      navigate("/");
+    },
+    onError: () => {
+      toast.error(t("toastErrorMessage"));
+    },
+  });
+
   const handleSubmit = (values: FormikValues, actions: any) => {
     actions.setSubmitting(true);
-    apiJson
-      .post("/login", values)
-      .then((response) => dispatch(setUser(response.data)));
-
-    navigate("/");
+    mutate(values);
     actions.setSubmitting(false);
   };
 
