@@ -5,11 +5,12 @@ interface ButtonProps {
   onClick?: () => void;
   type: "button" | "submit" | "reset";
   disabled?: boolean;
+  color: string;
 }
 
-export function Button({ text, onClick, type }: ButtonProps) {
+export function Button({ text, onClick, type, color }: ButtonProps) {
   return (
-    <S.Button onClick={onClick} type={type}>
+    <S.Button onClick={onClick} type={type} color={color}>
       {text}
     </S.Button>
   );

@@ -89,3 +89,8 @@ export const MenuOption = styled.a<MenuOptionInterface>`
     color: #6c7ebe;
   }
 `;
+
+export const ButtonsContainer = styled.div`
+  display: flex;
+  gap: 0.5rem;
+`;

@@ -64,11 +64,20 @@ export function Header() {
               {isUserLogged ? (
                 <UserPopover />
               ) : (
-                <Button
-                  text={t("login")}
-                  onClick={() => navigate("/login")}
-                  type="button"
-                />
+                <S.ButtonsContainer>
+                  <Button
+                    color="blue"
+                    text={t("login")}
+                    onClick={() => navigate("/login")}
+                    type="button"
+                  />
+                  <Button
+                    color="yellow"
+                    text={t("signup")}
+                    onClick={() => navigate("/login")}
+                    type="button"
+                  />
+                </S.ButtonsContainer>
               )}
             </S.ListItem>
 

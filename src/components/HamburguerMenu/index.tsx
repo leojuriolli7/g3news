@@ -69,6 +69,7 @@ export function HamburguerMenu() {
                     </S.UserPopoverContainer>
                   ) : (
                     <Button
+                      color="blue"
                       text={t("login")}
                       onClick={() => navigate("/login")}
                       type="button"

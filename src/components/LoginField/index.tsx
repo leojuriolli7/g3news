@@ -10,7 +10,6 @@ import { LoginAnimation } from "../LoginAnimation";
 export function LoginField() {
   const { t }: { t: any } = useTranslation();
   const isUserLogged = useSelector((state: RootState) => state.user.isLogged);
-  const user = useSelector((state: RootState) => state.user);
   const navigate = useNavigate();
 
   return (

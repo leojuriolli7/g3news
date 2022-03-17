@@ -30,6 +30,7 @@ export const MenuLink = styled.a`
   font-size: 1.2rem;
   cursor: pointer;
   padding: 1rem;
+  border-radius: 10px;
 
   &:hover {
     background: #f2f2f2;

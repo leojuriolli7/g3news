@@ -14,6 +14,7 @@
   "errorMessage": "Página não encontrada",
   "errorLink": "Clique aqui para voltar ao Início",
   "login": "Entrar",
+  "signup": "Cadastrar",
   "password": "Senha",
   "submit": "Enviar",
   "emailInputPlaceholderLogin": "seu@email.com",

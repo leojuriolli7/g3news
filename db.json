@@ -30,6 +30,14 @@
       "lastName": "Juriolli",
       "profileImage": "https://i.imgur.com/tpeBCZc.jpg",
       "id": 4
+    },
+    {
+      "email": "thecamelobezerra@gmail.com",
+      "password": "$2a$10$gAaaMnqR0henQB5dSWBXx.P7cFmplluL.WH9fCXsNfMKjPn7IVG/a",
+      "firstName": "Esther",
+      "lastName": "Melo",
+      "profileImage": "https://i.imgur.com/MWmzayH.jpg",
+      "id": 5
     }
   ]
 }

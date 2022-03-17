@@ -9,6 +9,8 @@ export const GlobalStyle = createGlobalStyle`
     --text: #212529;
     --news-title: #000000;
     --nav-text: #363f5f;
+    --blue: #3f51b5;
+    --yellow: #ffc107;
   }
  
   * { 

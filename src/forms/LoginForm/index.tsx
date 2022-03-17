@@ -83,6 +83,7 @@ export const LoginForm = () => {
           </S.FieldContainer>
 
           <Button
+            color="blue"
             type="submit"
             disabled={isSubmitting}
             text={
