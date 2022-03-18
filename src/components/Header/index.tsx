@@ -74,7 +74,7 @@ export function Header() {
                   <Button
                     color="yellow"
                     text={t("signup")}
-                    onClick={() => navigate("/login")}
+                    onClick={() => navigate("/signup")}
                     type="button"
                   />
                 </S.ButtonsContainer>

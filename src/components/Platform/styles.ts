@@ -8,6 +8,10 @@ export const WindowsIcon = styled(BsWindows).attrs({
   size: 17,
   color: "#000000",
 })`
+  @media (max-width: 1080px) {
+    margin-bottom: 0.15rem;
+  }
+
   @media (max-width: 522px) {
     margin-bottom: 0.4rem;
   }

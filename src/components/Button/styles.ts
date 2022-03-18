@@ -7,7 +7,7 @@ interface ButtonProps {
 export const Button = styled.button<ButtonProps>`
   padding: 4px 18px;
   background-color: ${(props) => `var(--${props.color})`};
-  border: 1px #3f51b5 solid;
+  border: 1px white solid;
   border-color: ${(props) => `var(--${props.color})`};
   color: var(--background);
   border-radius: 25px;

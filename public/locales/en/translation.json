@@ -20,11 +20,19 @@
   "emailInputPlaceholderLogin": "your@email.com",
   "passwordInputPlaceholderLogin": "Type in your password",
   "email": "Email",
-  "required": "Required",
+  "required": "Required.",
   "alreadyLoggedInMessage": "You are already Logged In",
   "yourProfile": "Your Profile",
   "notLoggedInMessage": "You are not Logged In",
   "goToProfile": "Go to Profile",
   "logout": "Log Out",
-  "toastErrorMessage": "Something went wrong. Please try again."
+  "toastErrorMessage": "Something went wrong. Please try again.",
+  "firstName": "First Name",
+  "lastName": "Surname",
+  "firstNameInputPlaceholder": "Your first name",
+  "lastNameInputPlaceholder": "Your surname",
+  "nameRegexError": "Only letters allowed.",
+  "passwordMinErrorMessage": "Password must be atleast 5 characters.",
+  "passwordMaxErrorMessage": "Password must have a maximum of 30 characters.",
+  "emailInvalid": "Invalid email."
 }

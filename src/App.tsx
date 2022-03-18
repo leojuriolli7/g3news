@@ -7,6 +7,7 @@ import { ErrorPage } from "./pages/errorpage";
 import "./i18n";
 import { LoginPage } from "./pages/login";
 import { Profile } from "./pages/profile";
+import { Signup } from "./pages/signup";
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
         <Route path="/giveaways" element={<Giveaways />} />
         <Route path="/login" element={<LoginPage />} />
         <Route path="/profile" element={<Profile />} />
+        <Route path="/signup" element={<Signup />} />
         <Route path="*" element={<ErrorPage />} />
       </Routes>
       <GlobalStyle />

@@ -4,7 +4,7 @@ export const Container = styled.main.attrs({
   className: "animate__animated animate__fadeIn",
 })`
   min-height: 80vh;
-  margin: 2rem 0 3rem 0;
+  margin: 3.5rem 0 3rem 0;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -46,9 +46,9 @@ export const Content = styled.div.attrs({
   }
 `;
 
-export const LoginTitle = styled.h1`
+export const SignupTitle = styled.h1`
   font-size: 4rem;
-  margin: 4rem 0 3rem 0;
+  margin: 3rem 0 3rem 0;
 `;
 
 export const AlreadyLoggedInMessage = styled.h2`
@@ -67,17 +67,28 @@ export const HomeLink = styled.a`
   }
 `;
 
-export const JoystickAnimationContainer = styled.div`
+export const SwordAnimationContainer = styled.div.attrs({
+  className: "animate__animated animate__fadeInBottomLeft",
+})`
   position: absolute;
-  top: -30px;
-  right: -20px;
-  transform: rotate(20deg);
+  top: -25px;
+  left: -15px;
   z-index: 2;
 `;
 
-export const JoystickAnimation = styled.img`
-  width: 160px;
+export const SwordAnimation = styled.img`
+  width: 126px;
+
+  @media (max-width: 625px) {
+    width: 100px;
+  }
+
+  @media (max-width: 430px) {
+    width: 80px;
+  }
+
   animation: shake-animation 3s ease infinite;
+  animation-delay: 5s;
   transform-origin: 50% 50%;
 
   @keyframes shake-animation {
@@ -105,9 +116,5 @@ export const JoystickAnimation = styled.img`
     100% {
       transform: translate(0, 0);
     }
-  }
-
-  @media (max-width: 625px) {
-    width: 100px;
   }
 `;

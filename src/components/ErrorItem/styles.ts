@@ -1,13 +1,17 @@
 import styled from "styled-components";
 
-export const Container = styled.div`
+export const Container = styled.div.attrs({
+  className: "animate__animated animate__fadeIn",
+})`
   margin-top: 10rem;
   display: flex;
   justify-content: center;
   align-items: center;
 `;
 
-export const Content = styled.main`
+export const Content = styled.main.attrs({
+  className: "animate__animated animate__zoomIn",
+})`
   box-shadow: 1px 5px 15px 5px rgba(0, 0, 0, 0.1);
   padding: 2.5rem 5rem;
   border-radius: 10px;

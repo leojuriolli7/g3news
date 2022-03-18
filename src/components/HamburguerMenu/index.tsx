@@ -68,12 +68,20 @@ export function HamburguerMenu() {
                       <UserPopover />
                     </S.UserPopoverContainer>
                   ) : (
-                    <Button
-                      color="blue"
-                      text={t("login")}
-                      onClick={() => navigate("/login")}
-                      type="button"
-                    />
+                    <S.ButtonsContainer>
+                      <Button
+                        color="blue"
+                        text={t("login")}
+                        onClick={() => navigate("/login")}
+                        type="button"
+                      />
+                      <Button
+                        color="yellow"
+                        text={t("signup")}
+                        onClick={() => navigate("/signup")}
+                        type="button"
+                      />
+                    </S.ButtonsContainer>
                   )}
                 </S.ListItem>
               </S.UnorganizedList>

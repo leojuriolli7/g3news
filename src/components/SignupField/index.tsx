@@ -1,13 +1,13 @@
 import { RootState } from "../../store/";
 import { useSelector } from "react-redux";
-import joystick from "../../assets/gamepad2.svg";
 import * as S from "./styles";
 import { useTranslation } from "react-i18next";
 import { useNavigate } from "react-router-dom";
 import "animate.css";
-import { LoginForm } from "../../forms/LoginForm";
+import { SignupForm } from "../../forms/SignupForm";
+import swordImage from "../../assets/invader.svg";
 
-export function LoginField() {
+export function SignupField() {
   const { t }: { t: any } = useTranslation();
   const isUserLogged = useSelector((state: RootState) => state.user.isLogged);
   const navigate = useNavigate();
@@ -15,9 +15,9 @@ export function LoginField() {
   return (
     <S.Container>
       <S.Content>
-        <S.JoystickAnimationContainer>
-          <S.JoystickAnimation src={joystick} />
-        </S.JoystickAnimationContainer>
+        <S.SwordAnimationContainer>
+          <S.SwordAnimation src={swordImage} />
+        </S.SwordAnimationContainer>
         {isUserLogged ? (
           <>
             <S.AlreadyLoggedInMessage>
@@ -29,8 +29,8 @@ export function LoginField() {
           </>
         ) : (
           <>
-            <S.LoginTitle>{t("login")}</S.LoginTitle>
-            <LoginForm />
+            <S.SignupTitle>{t("signup")}</S.SignupTitle>
+            <SignupForm />
           </>
         )}
       </S.Content>

@@ -22,8 +22,8 @@ export const Container = styled.div`
 `;
 
 export const Navigation = styled.nav`
-  padding-top: 3.5rem;
-  padding-bottom: 4.5rem;
+  padding-top: 4.5rem;
+  padding-bottom: 3.5rem;
 `;
 
 export const UnorganizedList = styled.ul`
@@ -40,7 +40,7 @@ export const UnorganizedList = styled.ul`
 
 export const ListItem = styled.li`
   button {
-    padding: 18px 36px;
+    padding: 14px 30px;
     border-radius: 35px;
     font-size: 1.7rem;
   }
@@ -61,4 +61,18 @@ export const UserPopoverContainer = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
+
+  img {
+    width: 100px;
+    height: 100px;
+
+    &:hover {
+      transform: scale(1.1);
+    }
+  }
+`;
+
+export const ButtonsContainer = styled.div`
+  display: flex;
+  gap: 1rem;
 `;

@@ -20,11 +20,19 @@
   "emailInputPlaceholderLogin": "seu@email.com",
   "passwordInputPlaceholderLogin": "Digite sua senha",
   "email": "Email",
-  "required": "Campo obrigatório",
+  "required": "Campo obrigatório.",
   "alreadyLoggedInMessage": "Você já está Logado",
   "yourProfile": "Seu Perfil",
   "notLoggedInMessage": "Você não está Logado",
   "goToProfile": "Ir para Perfil",
   "logout": "Deslogar",
-  "toastErrorMessage": "Algo deu errado. Por favor tente novamente."
+  "toastErrorMessage": "Algo deu errado. Por favor tente novamente.",
+  "firstName": "Nome",
+  "lastName": "Sobrenome",
+  "firstNameInputPlaceholder": "Digite seu nome",
+  "lastNameInputPlaceholder": "Digite seu sobrenome",
+  "nameRegexError": "Apenas letras são permitidas.",
+  "passwordMinErrorMessage": "Senha deve possuir no mínimo 5 dígitos.",
+  "passwordMaxErrorMessage": "Senha deve possuir no máximo 30 dígitos.",
+  "emailInvalid": "Email inválido."
 }

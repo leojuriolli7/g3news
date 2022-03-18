@@ -22,6 +22,10 @@ export const ProfileContainer = styled.main.attrs({
   border-radius: 25px;
   box-shadow: 1px 5px 15px 5px rgba(0, 0, 0, 0.1);
   padding: 0 5rem 8rem 5rem;
+
+  @media (max-width: 400px) {
+    padding: 0 2rem 8rem 2rem;
+  }
 `;
 
 export const ProfileDetailsContainer = styled.div`
@@ -35,6 +39,7 @@ export const ProfileTitle = styled.h1`
   font-size: 3rem;
   padding-top: 2rem;
   margin: 0;
+  text-align: center;
 `;
 
 export const ErrorTitle = styled(ProfileTitle)`
@@ -70,4 +75,5 @@ export const ProfileImage = styled.img`
 export const ProfileName = styled.h2`
   margin-top: 1.2rem;
   color: var(--text-title);
+  text-align: center;
 `;
