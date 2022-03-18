@@ -67,11 +67,12 @@ export const HomeLink = styled.a`
   }
 `;
 
-export const AnimationContainer = styled.div`
+export const AnimationContainer = styled.div.attrs({
+  className: "animate__animated animate__rotateIn",
+})`
   position: absolute;
   top: -30px;
   right: -20px;
-  transform: rotate(20deg);
   z-index: 2;
 `;
 
@@ -79,25 +80,26 @@ export const Animation = styled.img`
   width: 160px;
   animation: shake-animation 3s ease infinite;
   transform-origin: 50% 50%;
+  animation-delay: 3s;
 
   @keyframes shake-animation {
     0% {
       transform: translate(0, 0);
     }
     1.78571% {
-      transform: translate(14px, 0);
+      transform: translate(14px, 10px);
     }
     3.57143% {
       transform: translate(0, 0);
     }
     5.35714% {
-      transform: translate(14px, 0);
+      transform: translate(14px, 10px);
     }
     7.14286% {
       transform: translate(0, 0);
     }
     8.92857% {
-      transform: translate(14px, 0);
+      transform: translate(14px, 10px);
     }
     10.71429% {
       transform: translate(0, 0);

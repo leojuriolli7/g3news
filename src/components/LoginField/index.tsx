@@ -1,6 +1,6 @@
 import { RootState } from "../../store/";
 import { useSelector } from "react-redux";
-import joystick from "../../assets/gamepad2.svg";
+import joystick from "../../assets/gamepad.svg";
 import * as S from "./styles";
 import { useTranslation } from "react-i18next";
 import { useNavigate } from "react-router-dom";

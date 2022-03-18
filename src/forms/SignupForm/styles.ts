@@ -23,7 +23,7 @@ export const FieldContainer = styled.div`
     }
 
     @media (max-width: 429px) {
-      width: 14rem;
+      width: 17rem;
       font-size: 1rem;
     }
   }

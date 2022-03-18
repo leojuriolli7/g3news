@@ -35,7 +35,7 @@ export const Content = styled.div.attrs({
   box-shadow: 1px 5px 15px 5px rgba(0, 0, 0, 0.1);
   padding: 0 4rem 3rem 4rem;
 
-  @media (max-width: 368px) {
+  @media (max-width: 429px) {
     padding: 0 2rem 3rem 2rem;
   }
 
@@ -83,7 +83,7 @@ export const Animation = styled.img`
     width: 100px;
   }
 
-  @media (max-width: 430px) {
+  @media (max-width: 509px) {
     width: 80px;
   }
 
