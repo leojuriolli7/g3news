@@ -5,7 +5,7 @@ import { useTranslation } from "react-i18next";
 import { useNavigate } from "react-router-dom";
 import "animate.css";
 import { SignupForm } from "../../forms/SignupForm";
-import swordImage from "../../assets/invader.svg";
+import invaderImage from "../../assets/invader.svg";
 
 export function SignupField() {
   const { t }: { t: any } = useTranslation();
@@ -15,9 +15,9 @@ export function SignupField() {
   return (
     <S.Container>
       <S.Content>
-        <S.SwordAnimationContainer>
-          <S.SwordAnimation src={swordImage} />
-        </S.SwordAnimationContainer>
+        <S.AnimationContainer>
+          <S.Animation src={invaderImage} />
+        </S.AnimationContainer>
         {isUserLogged ? (
           <>
             <S.AlreadyLoggedInMessage>

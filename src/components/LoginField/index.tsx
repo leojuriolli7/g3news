@@ -15,9 +15,9 @@ export function LoginField() {
   return (
     <S.Container>
       <S.Content>
-        <S.JoystickAnimationContainer>
-          <S.JoystickAnimation src={joystick} />
-        </S.JoystickAnimationContainer>
+        <S.AnimationContainer>
+          <S.Animation src={joystick} />
+        </S.AnimationContainer>
         {isUserLogged ? (
           <>
             <S.AlreadyLoggedInMessage>

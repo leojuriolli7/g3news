@@ -43,6 +43,11 @@ export const ListItem = styled.li`
     padding: 14px 30px;
     border-radius: 35px;
     font-size: 1.7rem;
+
+    @media (max-width: 322px) {
+      padding: 12px 20px;
+      font-size: 1.6rem;
+    }
   }
 `;
 
@@ -75,4 +80,8 @@ export const UserPopoverContainer = styled.div`
 export const ButtonsContainer = styled.div`
   display: flex;
   gap: 1rem;
+
+  @media (max-width: 322px) {
+    gap: 0.5rem;
+  }
 `;

@@ -34,5 +34,8 @@
   "nameRegexError": "Apenas letras são permitidas.",
   "passwordMinErrorMessage": "Senha deve possuir no mínimo 5 dígitos.",
   "passwordMaxErrorMessage": "Senha deve possuir no máximo 30 dígitos.",
-  "emailInvalid": "Email inválido."
+  "emailInvalid": "Email inválido.",
+  "confirmPassword": "Confirmar Senha",
+  "passwordsDontMatchMessage": "Senhas não são iguais.",
+  "PasswordConfirmInputPlaceholder": "Confirme sua senha"
 }

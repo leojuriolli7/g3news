@@ -13,7 +13,11 @@ import { Button } from "../../components/Button";
 import { InputValidationMessage } from "../../components/InputValidationMessage";
 import { PasswordEye } from "../../components/PasswordEye";
 import { Field, Form, Formik, FormikValues } from "formik";
-import { emailRegex, nameRegex } from "../../helper/constants";
+import {
+  emailRegex,
+  firstNameRegex,
+  lastNameRegex,
+} from "../../helper/constants";
 
 export function SignupForm() {
   const navigate = useNavigate();
@@ -31,10 +35,14 @@ export function SignupForm() {
       .max(30, t("passwordMaxErrorMessage")),
     firstName: Yup.string()
       .required(t("required"))
-      .matches(nameRegex, { message: t("nameRegexError") }),
+      .matches(firstNameRegex, { message: t("nameRegexError") }),
     lastName: Yup.string()
       .required(t("required"))
-      .matches(nameRegex, { message: t("nameRegexError") }),
+      .matches(lastNameRegex, { message: t("nameRegexError") }),
+    passwordConfirm: Yup.string().oneOf(
+      [Yup.ref("password"), null],
+      t("passwordsDontMatchMessage")
+    ),
   });
 
   const { mutate } = useMutation(userSignUp, {
@@ -60,6 +68,7 @@ export function SignupForm() {
         password: "",
         firstName: "",
         lastName: "",
+        passwordConfirm: "",
       }}
       validationSchema={SignupSchema}
       onSubmit={handleSubmit}
@@ -119,6 +128,25 @@ export function SignupForm() {
             />
             {touched.password && errors.password && (
               <InputValidationMessage text={errors.password} />
+            )}
+          </S.FieldContainer>
+
+          <S.FieldContainer>
+            <S.InputLabel htmlFor="password">
+              {t("confirmPassword")}
+            </S.InputLabel>
+            <Field
+              id="passwordConfirm"
+              name="passwordConfirm"
+              placeholder={t("PasswordConfirmInputPlaceholder")}
+              type={passwordVisible === true ? "text" : "password"}
+            />
+            <PasswordEye
+              passwordVisible={passwordVisible}
+              setPasswordVisible={setPasswordVisible}
+            />
+            {touched.passwordConfirm && errors.passwordConfirm && (
+              <InputValidationMessage text={errors.passwordConfirm} />
             )}
           </S.FieldContainer>
 

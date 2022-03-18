@@ -67,7 +67,7 @@ export const HomeLink = styled.a`
   }
 `;
 
-export const SwordAnimationContainer = styled.div.attrs({
+export const AnimationContainer = styled.div.attrs({
   className: "animate__animated animate__fadeInBottomLeft",
 })`
   position: absolute;
@@ -76,7 +76,7 @@ export const SwordAnimationContainer = styled.div.attrs({
   z-index: 2;
 `;
 
-export const SwordAnimation = styled.img`
+export const Animation = styled.img`
   width: 126px;
 
   @media (max-width: 625px) {
@@ -88,7 +88,7 @@ export const SwordAnimation = styled.img`
   }
 
   animation: shake-animation 3s ease infinite;
-  animation-delay: 5s;
+  animation-delay: 2s;
   transform-origin: 50% 50%;
 
   @keyframes shake-animation {
@@ -96,19 +96,19 @@ export const SwordAnimation = styled.img`
       transform: translate(0, 0);
     }
     1.78571% {
-      transform: translate(14px, 0);
+      transform: translate(14px, -7px);
     }
     3.57143% {
       transform: translate(0, 0);
     }
     5.35714% {
-      transform: translate(14px, 0);
+      transform: translate(14px, -7px);
     }
     7.14286% {
       transform: translate(0, 0);
     }
     8.92857% {
-      transform: translate(14px, 0);
+      transform: translate(14px, -7px);
     }
     10.71429% {
       transform: translate(0, 0);

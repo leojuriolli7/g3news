@@ -34,5 +34,8 @@
   "nameRegexError": "Only letters allowed.",
   "passwordMinErrorMessage": "Password must be atleast 5 characters.",
   "passwordMaxErrorMessage": "Password must have a maximum of 30 characters.",
-  "emailInvalid": "Invalid email."
+  "emailInvalid": "Invalid email.",
+  "confirmPassword": "Confirm Password",
+  "passwordsDontMatchMessage": "Passwords don't match.",
+  "PasswordConfirmInputPlaceholder": "Confirm your password"
 }

@@ -67,7 +67,7 @@ export const HomeLink = styled.a`
   }
 `;
 
-export const JoystickAnimationContainer = styled.div`
+export const AnimationContainer = styled.div`
   position: absolute;
   top: -30px;
   right: -20px;
@@ -75,7 +75,7 @@ export const JoystickAnimationContainer = styled.div`
   z-index: 2;
 `;
 
-export const JoystickAnimation = styled.img`
+export const Animation = styled.img`
   width: 160px;
   animation: shake-animation 3s ease infinite;
   transform-origin: 50% 50%;
