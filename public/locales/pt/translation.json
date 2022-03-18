@@ -37,5 +37,9 @@
   "emailInvalid": "Email inválido.",
   "confirmPassword": "Confirmar Senha",
   "passwordsDontMatchMessage": "Senhas não são iguais.",
-  "PasswordConfirmInputPlaceholder": "Confirme sua senha"
+  "PasswordConfirmInputPlaceholder": "Confirme sua senha",
+  "firstNameMinErrorMessage": "Seu nome precisa ter no mínimo 3 caracteres.",
+  "firstNameMaxErrorMessage": "Seu nome não pode ter mais de 30 caracteres.",
+  "lastNameMinErrorMessage": "Seu sobrenome precisa ter no mínimo 3 caracteres.",
+  "lastNameMaxErrorMessage": "Seu sobrenome não pode ter mais de 40 caracteres."
 }

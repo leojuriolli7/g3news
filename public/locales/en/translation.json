@@ -20,7 +20,7 @@
   "emailInputPlaceholderLogin": "your@email.com",
   "passwordInputPlaceholderLogin": "Type in your password",
   "email": "Email",
-  "required": "Required.",
+  "required": "This field is required.",
   "alreadyLoggedInMessage": "You are already Logged In",
   "yourProfile": "Your Profile",
   "notLoggedInMessage": "You are not Logged In",
@@ -37,5 +37,9 @@
   "emailInvalid": "Invalid email.",
   "confirmPassword": "Confirm Password",
   "passwordsDontMatchMessage": "Passwords don't match.",
-  "PasswordConfirmInputPlaceholder": "Confirm your password"
+  "PasswordConfirmInputPlaceholder": "Confirm your password",
+  "firstNameMinErrorMessage": "Your name has to have atleast 3 characters.",
+  "firstNameMaxErrorMessage": "Your name can't excede 25 characters.",
+  "lastNameMinErrorMessage": "Your surname has to have atleast 3 characters.",
+  "lastNameMaxErrorMessage": "Your surname can't excede 40 characters."
 }

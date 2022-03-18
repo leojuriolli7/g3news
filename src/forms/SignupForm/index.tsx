@@ -35,14 +35,17 @@ export function SignupForm() {
       .max(30, t("passwordMaxErrorMessage")),
     firstName: Yup.string()
       .required(t("required"))
-      .matches(firstNameRegex, { message: t("nameRegexError") }),
+      .matches(firstNameRegex, { message: t("nameRegexError") })
+      .min(3, t("firstNameMinErrorMessage"))
+      .max(25, t("firstNameMaxErrorMessage")),
     lastName: Yup.string()
       .required(t("required"))
-      .matches(lastNameRegex, { message: t("nameRegexError") }),
-    passwordConfirm: Yup.string().oneOf(
-      [Yup.ref("password"), null],
-      t("passwordsDontMatchMessage")
-    ),
+      .matches(lastNameRegex, { message: t("nameRegexError") })
+      .min(3, t("lastNameMinErrorMessage"))
+      .max(40, t("lastNameMaxErrorMessage")),
+    passwordConfirm: Yup.string()
+      .required(t("required"))
+      .oneOf([Yup.ref("password"), null], t("passwordsDontMatchMessage")),
   });
 
   const { mutate } = useMutation(userSignUp, {
