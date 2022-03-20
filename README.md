@@ -13,7 +13,7 @@ The app has six pages:
 - <strong>Giveaways:</strong> This page displays a list of giveaways available to enter, complete with a progress bar. When a giveaway is clicked, it opens the link for it provided by the API.
 - <strong>Sign up:</strong> This page allows the user to create a new account that will be stored on the local database using JSON Server. The form were created with Formik and authentication was done with Yup. 
 - <strong>Login:</strong> This page allows the user to login with the account created. When logged, a profile page will now be available and reachable through a profile icon on the right-side of the header. It allows access to the profile page and to logout.
-- <strong>Profile:</strong> This is the profile page, accessable through the profile icon on the header. It displays the profile image and name of the user.
+- <strong>Profile:</strong> This is the profile page, accessible through the profile icon on the header. It displays the profile image and name of the user.
 
 This application uses, among others: <br>
 - React Query to make POST requests to the database. <br>
