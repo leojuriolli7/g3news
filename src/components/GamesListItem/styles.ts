@@ -123,7 +123,7 @@ export const GameExtraDetailsContainer = styled.div`
   gap: 1rem;
 
   @media (max-width: 594px) {
-    margin-top: 0.2rem;
+    margin-top: 0.6rem;
   }
 `;
 
