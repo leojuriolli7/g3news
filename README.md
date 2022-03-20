@@ -1,4 +1,6 @@
-# G3News
+# <img src="./src/assets/logosmall.svg" width="45px" align="center"></img> G3News
+
+
 
 G3News is a gaming news app. It consumes the MMO Games API through Axios. 
 
