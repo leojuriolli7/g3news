@@ -3,8 +3,9 @@
     {
       "email": "testAccount@email.com",
       "password": "$2a$10$DXBN7CSLOYf9jM/hoOYAb..G6nB0guR4uEG1PtQUbKZYi3gsGj8j.",
-      "firstName": "Test",
-      "lastName": "Account",
+      "firstName": "Leonardo",
+      "lastName": "Juriolli",
+      "profileImage": "https://i.imgur.com/YL3A8fy.jpg",
       "id": 1
     }
   ]
