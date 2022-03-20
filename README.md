@@ -29,7 +29,9 @@ As of right now it is not possible to store profile pictures on the JSON server,
 <img src="./src/utils/githubpictures/news.png" width="700px"></img>
 <img src="./src/utils/githubpictures/login.png" width="700px"></img>
 <img src="./src/utils/githubpictures/signup.png" width="700px"></img>
+<img src="./src/utils/githubpictures/giveaways.png" width="700px"></img>
 <img src="./src/utils/githubpictures/gamesDesktop.png" width="700px"></img> <br>
 <img src="./src/utils/githubpictures/gamesMobile.png" width="250px"></img>
 <img src="./src/utils/githubpictures/newsMobile.png" width="250px"></img>
+
 
