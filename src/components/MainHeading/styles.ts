@@ -37,8 +37,11 @@ export const ListDescription = styled.p`
   margin-top: 1rem;
   font-size: 1.5rem;
 
+  @media (max-width: 415px) {
+    margin: 0 0.5rem;
+  }
+
   @media (max-width: 338px) {
     font-size: 1.3rem;
-    padding: 0 0.5rem;
   }
 `;
