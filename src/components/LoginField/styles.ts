@@ -87,19 +87,19 @@ export const Animation = styled.img`
       transform: translate(0, 0);
     }
     1.78571% {
-      transform: translate(14px, 10px);
+      transform: translate(14px, 0);
     }
     3.57143% {
       transform: translate(0, 0);
     }
     5.35714% {
-      transform: translate(14px, 10px);
+      transform: translate(14px, 0);
     }
     7.14286% {
       transform: translate(0, 0);
     }
     8.92857% {
-      transform: translate(14px, 10px);
+      transform: translate(14px, 0);
     }
     10.71429% {
       transform: translate(0, 0);

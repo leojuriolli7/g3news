@@ -1,5 +1,4 @@
 import { useState } from "react";
-import * as Yup from "yup";
 import * as S from "./styles";
 import { useTranslation } from "react-i18next";
 import { useDispatch } from "react-redux";
@@ -13,40 +12,14 @@ import { Button } from "../../components/Button";
 import { InputValidationMessage } from "../../components/InputValidationMessage";
 import { PasswordEye } from "../../components/PasswordEye";
 import { Field, Form, Formik, FormikValues } from "formik";
-import {
-  emailRegex,
-  firstNameRegex,
-  lastNameRegex,
-} from "../../helper/constants";
+import { SignupSchema } from "../../utils/validation/signupFormValidation";
 
 export function SignupForm() {
   const navigate = useNavigate();
   const { t }: { t: any } = useTranslation();
   const dispatch = useDispatch();
+  console.log("~ SignupSchema", SignupSchema);
   const [passwordVisible, setPasswordVisible] = useState(false);
-
-  const SignupSchema = Yup.object().shape({
-    email: Yup.string()
-      .required(t("required"))
-      .matches(emailRegex, { message: t("emailInvalid") }),
-    password: Yup.string()
-      .required(t("required"))
-      .min(5, t("passwordMinErrorMessage"))
-      .max(30, t("passwordMaxErrorMessage")),
-    firstName: Yup.string()
-      .required(t("required"))
-      .matches(firstNameRegex, { message: t("nameRegexError") })
-      .min(3, t("firstNameMinErrorMessage"))
-      .max(25, t("firstNameMaxErrorMessage")),
-    lastName: Yup.string()
-      .required(t("required"))
-      .matches(lastNameRegex, { message: t("nameRegexError") })
-      .min(3, t("lastNameMinErrorMessage"))
-      .max(40, t("lastNameMaxErrorMessage")),
-    passwordConfirm: Yup.string()
-      .required(t("required"))
-      .oneOf([Yup.ref("password"), null], t("passwordsDontMatchMessage")),
-  });
 
   const { mutate } = useMutation(userSignUp, {
     onSuccess: (data) => {
@@ -60,6 +33,7 @@ export function SignupForm() {
 
   const handleSubmit = (values: FormikValues, actions: any) => {
     actions.setSubmitting(true);
+    delete values.passwordConfirm;
     mutate(values);
     actions.setSubmitting(false);
   };
@@ -73,7 +47,7 @@ export function SignupForm() {
         lastName: "",
         passwordConfirm: "",
       }}
-      validationSchema={SignupSchema}
+      validationSchema={SignupSchema()}
       onSubmit={handleSubmit}
     >
       {({ errors, touched, isSubmitting }) => (

@@ -38,6 +38,13 @@
       "lastName": "Melo",
       "profileImage": "https://i.imgur.com/MWmzayH.jpg",
       "id": 5
+    },
+    {
+      "email": "leojuriolli4@gmail.com",
+      "password": "$2a$10$Yv1.Ap9CB/K0sQH0.MCTZO2tIVycsJb2uWGmHUKf9LibJ7joejlh.",
+      "firstName": "LUIS",
+      "lastName": "Juriolli",
+      "id": 6
     }
   ]
 }

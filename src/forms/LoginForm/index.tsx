@@ -1,5 +1,4 @@
 import { Formik, Field, Form, FormikValues } from "formik";
-import * as Yup from "yup";
 import * as S from "./styles";
 import { useDispatch } from "react-redux";
 import { useTranslation } from "react-i18next";
@@ -13,23 +12,13 @@ import { PasswordEye } from "../../components/PasswordEye";
 import { useMutation } from "react-query";
 import { userLogin } from "../../utils/requests";
 import toast from "react-hot-toast";
-import { emailRegex } from "../../helper/constants";
+import { LoginSchema } from "../../utils/validation/loginFormValidation";
 
 export const LoginForm = () => {
   const navigate = useNavigate();
   const { t }: { t: any } = useTranslation();
   const dispatch = useDispatch();
   const [passwordVisible, setPasswordVisible] = useState(false);
-
-  const LoginSchema = Yup.object().shape({
-    email: Yup.string()
-      .required(t("required"))
-      .matches(emailRegex, { message: t("emailInvalid") }),
-    password: Yup.string()
-      .required(t("required"))
-      .min(5, t("passwordMinErrorMessage"))
-      .max(30, t("passwordMaxErrorMessage")),
-  });
 
   const { mutate } = useMutation(userLogin, {
     onSuccess: (data) => {
@@ -53,7 +42,7 @@ export const LoginForm = () => {
         email: "",
         password: "",
       }}
-      validationSchema={LoginSchema}
+      validationSchema={LoginSchema()}
       onSubmit={handleSubmit}
     >
       {({ errors, touched, isSubmitting }) => (
