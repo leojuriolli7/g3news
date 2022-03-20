@@ -1,50 +1,11 @@
 {
   "users": [
     {
-      "email": "leojuriolli@gmail.com",
-      "password": "$2a$10$2RRRmXuhttWA.ulRgAZ7huSEGPUU6Cvwz4XOexGRFoTRpAY3rr08C",
-      "firstName": "Leonardo",
-      "lastName": "Dias",
-      "profileImage": "https://i.imgur.com/YL3A8fy.jpg",
+      "email": "testAccount@email.com",
+      "password": "$2a$10$DXBN7CSLOYf9jM/hoOYAb..G6nB0guR4uEG1PtQUbKZYi3gsGj8j.",
+      "firstName": "Test",
+      "lastName": "Account",
       "id": 1
-    },
-    {
-      "email": "leojuriolli2@gmail.com",
-      "password": "$2a$10$v8rFIomLRFDazEgjcTkoGeRDi07.adj8ZzgfwsBnemQsMRe6jlsz.",
-      "firstName": "Leonardo",
-      "lastName": "Juriolli",
-      "profileImage": "https://i.imgur.com/KMHfIiW.jpg",
-      "id": 2
-    },
-    {
-      "email": "suelijuriolli@gmail.com",
-      "password": "$2a$10$JsV8E/.8xmfoYUrma3pvpeVuyOfcf7Sof7FlXa.n7RQnTEc3x.qSm",
-      "firstName": "Sueli",
-      "lastName": "Juriolli",
-      "id": 3
-    },
-    {
-      "email": "luisjuriolli@gmail.com",
-      "password": "$2a$10$xmi8qIguvtJIwvUrSCYeLu6Bk.ZZ.9CFLT5U.01RWzKGU1lVBIubi",
-      "firstName": "Luis",
-      "lastName": "Juriolli",
-      "profileImage": "https://i.imgur.com/tpeBCZc.jpg",
-      "id": 4
-    },
-    {
-      "email": "thecamelobezerra@gmail.com",
-      "password": "$2a$10$gAaaMnqR0henQB5dSWBXx.P7cFmplluL.WH9fCXsNfMKjPn7IVG/a",
-      "firstName": "Esther",
-      "lastName": "Melo",
-      "profileImage": "https://i.imgur.com/MWmzayH.jpg",
-      "id": 5
-    },
-    {
-      "email": "leojuriolli4@gmail.com",
-      "password": "$2a$10$Yv1.Ap9CB/K0sQH0.MCTZO2tIVycsJb2uWGmHUKf9LibJ7joejlh.",
-      "firstName": "LUIS",
-      "lastName": "Juriolli",
-      "id": 6
     }
   ]
 }
