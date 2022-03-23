@@ -72,7 +72,7 @@ export function Header() {
                     type="button"
                   />
                   <Button
-                    color="yellow"
+                    color="green"
                     text={t("signup")}
                     onClick={() => navigate("/signup")}
                     type="button"

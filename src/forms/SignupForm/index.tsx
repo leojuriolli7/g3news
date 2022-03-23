@@ -128,7 +128,7 @@ export function SignupForm() {
           </S.FieldContainer>
 
           <Button
-            color="yellow"
+            color="green"
             type="submit"
             disabled={isSubmitting}
             text={
