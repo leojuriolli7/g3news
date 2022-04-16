@@ -8,7 +8,6 @@ import { useTranslation } from "react-i18next";
 import { LanguageMenu } from "../LanguageMenu";
 import { HamburguerMenu } from "../HamburguerMenu";
 import { UserPopover } from "../UserPopover";
-
 import { Button } from "../Button";
 
 export function Header() {
