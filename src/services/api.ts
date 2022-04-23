@@ -1,7 +1,11 @@
 import axios from "axios";
 
 export const api = axios.create({
-  baseURL: "https://mmobomb.com/api1/",
+  headers: {
+    "X-RapidAPI-Host": "mmo-games.p.rapidapi.com",
+    "X-RapidAPI-Key": "ca891993f7msh895de64552ef201p1b4377jsn666d08989200",
+  },
+  baseURL: "https://mmo-games.p.rapidapi.com/",
 });
 
 export const apiJson = axios.create({
