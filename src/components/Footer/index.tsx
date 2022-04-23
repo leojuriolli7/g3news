@@ -11,7 +11,7 @@ export function Footer() {
         <S.Image
           src={footerLogo}
           title={t("logoTitle")}
-          onClick={() => window.open("https://www.mmobomb.com/api")}
+          onClick={() => window.open("https://www.mmobomb.com")}
         />
       </S.Content>
     </S.Container>
