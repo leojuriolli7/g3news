@@ -18,7 +18,6 @@ export function SignupForm() {
   const navigate = useNavigate();
   const { t }: { t: any } = useTranslation();
   const dispatch = useDispatch();
-  console.log("~ SignupSchema", SignupSchema);
   const [passwordVisible, setPasswordVisible] = useState(false);
 
   const { mutate } = useMutation(userSignUp, {
@@ -130,6 +129,7 @@ export function SignupForm() {
           <Button
             color="green"
             type="submit"
+            onClick={() => toast.error(t("toastErrorMessage"))}
             disabled={isSubmitting}
             text={
               isSubmitting ? (
