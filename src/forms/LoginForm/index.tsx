@@ -26,7 +26,7 @@ export const LoginForm = () => {
       navigate("/");
     },
     onError: () => {
-      toast.error(t("toastErrorMessage"));
+      console.log("Error");
     },
   });
 
@@ -81,6 +81,7 @@ export const LoginForm = () => {
             color="blue"
             type="submit"
             disabled={isSubmitting}
+            onClick={() => toast.error(t("toastErrorMessage"))}
             text={
               isSubmitting ? (
                 <Spinner animation="border" size="sm" />
