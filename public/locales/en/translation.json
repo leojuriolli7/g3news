@@ -26,7 +26,7 @@
   "notLoggedInMessage": "You are not Logged In",
   "goToProfile": "Go to Profile",
   "logout": "Log Out",
-  "toastErrorMessage": "Something went wrong. Please try again.",
+  "toastErrorMessage": "Login and Sign up disabled",
   "firstName": "First Name",
   "lastName": "Surname",
   "firstNameInputPlaceholder": "Your first name",

@@ -26,7 +26,7 @@
   "notLoggedInMessage": "Você não está Logado",
   "goToProfile": "Ir para Perfil",
   "logout": "Deslogar",
-  "toastErrorMessage": "Algo deu errado. Por favor tente novamente.",
+  "toastErrorMessage": "Login e Sign up desabilitados.",
   "firstName": "Nome",
   "lastName": "Sobrenome",
   "firstNameInputPlaceholder": "Digite seu nome",
