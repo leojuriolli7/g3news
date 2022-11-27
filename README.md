@@ -2,7 +2,7 @@
 
 G3News is a gaming news app. It consumes the MMO Games API through Axios. 
 
-Access on Heroku: https://g3news.herokuapp.com/
+Deployed on Vercel: https://g3news.vercel.app/
 
 Login and Sign up are disabled on Vercel because JSON Server is not deployed there. However by cloning the project it is possible to use those functionalities.
 
